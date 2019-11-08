@@ -1,0 +1,40 @@
+{
+  "name": "library-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Aloisio Alessandro <alessaloisio@gmail.com>",
+  "scripts": {
+    "lint": "eslint src test",
+    "lint:fix": "eslint --fix src test",
+    "clean:node": "rm -rf index.js lib",
+    "clean:browser": "rm -rf libraryX*.js",
+    "clean": "npm run clean:node && npm run clean:browser",
+    "minify": "uglifyjs libraryX.js -o libraryX.min.js  --compress --mangle --comments /Copyright/",
+    "build:browser": "node --require @babel/register build-browser && npm run minify",
+    "build:node": "babel src -d .",
+    "build": "npm run build:browser && npm run build:node",
+    "pretest": "npm run lint && npm run build",
+    "test": "nyc mocha --require @babel/register --reporter dot"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "uglify-js": "^3.6.8"
+  }
+}
