@@ -5,3 +5,5 @@ export default class {[{name}]} {
     console.log("hello from {[{name}]}");
   }
 }
+
+new {[{name}]}();
