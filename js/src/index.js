@@ -1,7 +1,7 @@
 const version = "1.0.0";
 
-export default class libraryX {
+export default class {[{name}]} {
   constructor(params) {
-    console.log("hello from libraryX");
+    console.log("hello from {[{name}]}");
   }
 }

@@ -1,1 +1,0 @@
-''' npm i -D @babel/cli @babel/core @babel/preset-env @babel/register babel-eslint babel-plugin-add-module-exports eslint eslint-config-airbnb-base eslint-plugin-import mocha nyc rollup rollup-plugin-babel uglify-js '''

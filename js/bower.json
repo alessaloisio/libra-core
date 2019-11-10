@@ -1,8 +1,8 @@
 {
-  "name": "libraryX",
-  "main": "libraryX.js",
-  "homepage": "https://github.com/alessaloisio/libraryX.js",
-  "authors": ["Aloisio Alessandro <alessaloisio@gmail.com>"],
+  "name": "{[{name}]}",
+  "main": "{[{name}]}.js",
+  "homepage": "{[{repoUrl}]}",
+  "authors": ["{[{author}]}"],
   "description": "",
   "license": "MIT",
   "ignore": [

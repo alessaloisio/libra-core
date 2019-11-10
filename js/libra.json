@@ -1,5 +1,6 @@
 {
   "name": "Library name : ",
   "description": "Library description : ",
-  "repoUrl": "Library repo url : "
+  "repoUrl": "Library repo url : ",
+  "author": "Library author : "
 }
