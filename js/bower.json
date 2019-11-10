@@ -3,7 +3,7 @@
   "main": "{[{name}]}.js",
   "homepage": "{[{repoUrl}]}",
   "authors": ["{[{author}]}"],
-  "description": "",
+  "description": "{[{description}]}",
   "license": "MIT",
   "ignore": [
     "**/.*",
