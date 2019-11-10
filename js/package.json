@@ -11,21 +11,24 @@
     "clean:browser": "rm -rf {[{name}]}*.js",
     "clean": "npm run clean:node && npm run clean:browser",
     "minify": "uglifyjs {[{name}]}.js -o {[{name}]}.min.js  --compress --mangle --comments /Copyright/",
-    "build:browser": "node --require @babel/register build-browser && npm run minify",
+    "build:browser": "rollup -c && npm run minify",
     "build:node": "babel src -d .",
     "build": "npm run build:browser && npm run build:node",
+    "watch:browser": "rollup -c -w",
     "pretest": "npm run lint && npm run build",
     "test": "nyc mocha --require @babel/register --reporter dot"
   },
   "engines": {
     "node": ">= 0.10"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/register": "^7.7.0",
+    "@babel/runtime": "^7.7.2",
     "babel-eslint": "^10.0.3",
     "babel-plugin-add-module-exports": "^1.0.2",
     "eslint": "^6.6.0",

@@ -15,6 +15,13 @@
       {
         "addDefaultProperty": true
       }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": true,
+        "regenerator": true
+      }
     ]
   ]
 }

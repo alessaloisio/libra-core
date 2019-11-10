@@ -19,6 +19,7 @@
 - `npm run lint` - Run ESlint with airbnb-config
 - `npm run lint:fix` - Run ESlint with airbnb-config and try to fix
 - `npm run minify` - Minify {[{name}]}.js
+- `npm run watch:browser` - Run build on file change
 
 # Installation
 
@@ -27,4 +28,3 @@ Just clone this repo and remove `.git` folder.
 # License
 
 MIT © {[{author}]}
-
