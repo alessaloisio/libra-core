@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./reset";
+@import "./fonts";
+@import "./shared";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+}
+
+body {
+  background-color: $background-base-color;
+}
