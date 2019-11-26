@@ -2,6 +2,7 @@
 import fs from "fs";
 import babel from "rollup-plugin-babel";
 import babelPresetEnv from "@babel/preset-env";
+import builtins from "rollup-plugin-node-builtins";
 import pkg from "./package.json";
 
 export default {
@@ -10,7 +11,8 @@ export default {
     babel({
       presets: [[babelPresetEnv, { modules: false }]],
       babelrc: false
-    })
+    }),
+    builtins()
   ],
   output: [
     {
