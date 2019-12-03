@@ -3,6 +3,6 @@
   "description": "Project description : ",
   "author": "Author name : ",
   "node_port": "Port Node.js : ",
-  "mongo_username": "Username Mongo",
-  "mongo_password": "Password Mongo"
+  "mongo_username": "Username Mongo : ",
+  "mongo_password": "Password Mongo : "
 }
